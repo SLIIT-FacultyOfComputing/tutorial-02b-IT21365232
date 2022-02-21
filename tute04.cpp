@@ -27,3 +27,24 @@ int main() {
   std::cout << std::endl;
   return 0;
 }
+long nCr(int n, int r){
+int a=1;
+for(int i=1;i<=n;++i){
+  a=a*i;
+  
+}
+
+int b=1;
+for(int i=1;i<=r;++i){
+  b=b*i;
+}
+int k=1,c=1;
+k=n-r;
+for(int i=1;i<=k;++i){
+  c=c*i;
+}
+int d;
+d= a/(b*c);
+return d ;
+
+}
